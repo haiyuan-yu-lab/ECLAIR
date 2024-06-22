@@ -9,15 +9,18 @@ Q6VAB6	P54646
 
 ## Output Format
 Once the pipeline is done running, a CSV file will be generated per interaction in the chosen output folder.
-Column Contents
-P1	Protein Partner 1 (Alphabetical)
-P2	Protein Partner 2 (Alphabetical)
-Prot	Indicated whether this row refers to the first (0) or the second (1) protein partner
-Pos	1-indexed Amino Acid Position that this row refers to
-Res	Expected Amino Acid at this position
-TopClf	Which of the 8 ECLAIR classifiers was used for this prediction
-Pred	Probability of this being an interface residue
-Interface Prediction	Binned probability of this being an interface residue (Very Low / Low / Medium / High / Very High)
+
+| Column | Contents |
+|--------|---------|
+| P1 |	Protein Partner 1 (Alphabetical) |
+| P2 | Protein Partner 2 (Alphabetical) |
+| Prot |	Indicated whether this row refers to the first (0) or the second (1) protein partner |
+| Pos	| 1-indexed Amino Acid Position that this row refers to |
+| Res	| Expected Amino Acid at this position |
+| TopClf |	Which of the 8 ECLAIR classifiers was used for this prediction |
+| Pred	| Probability of this being an interface residue |
+| Interface Prediction	| Binned probability of this being an interface residue (Very Low / Low / Medium / High / Very High) |
+
 
 ```
 P1,P2,Prot,Pos,Res,TopClf,Pred,Interface Prediction
@@ -34,6 +37,7 @@ P15056,Q6VAB6,0,9,G,2,0.0,Very Low
 
 ## Running the script
 The script requires a specific anaconda environment to run: ecalir.txt
+
 Note that running the script is extremely resource intensive. As a rule of thumb, allocate 10GB of RAM per core used.
 
 
